@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *,
 *::after,
 *::before {
@@ -10,6 +11,15 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     overflow-y: scroll;
+=======
+/* body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1ch;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+>>>>>>> 5a912e68b267b0bd56e3680dbc0e52fd23b46c5e
 }
 
 /* Desktop Nav */
@@ -32,11 +42,21 @@ body {
     height: 100%;
 }
 
+<<<<<<< HEAD
 nav .desktop-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+=======
+
+.nav-content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 5a912e68b267b0bd56e3680dbc0e52fd23b46c5e
 }
 
 nav .desktop-nav li a {
@@ -362,6 +382,7 @@ nav .desktop-nav li a:hover {
     }
 }
 
+
 @media (max-width: 768px) {
     .nav-container .desktop-nav {
         flex-direction: column;
@@ -414,6 +435,7 @@ nav .desktop-nav li a:hover {
 
     /* Mobile Nav */
 
+<<<<<<< HEAD
     nav .mobile-nav {
         display: flex;
         width: 100%;
@@ -607,4 +629,167 @@ div,
 span,
 a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+=======
+  .logo {
+    opacity: 0;
+  }
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1ch;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar__logo {
+  background-image: url('/dist/assets/brand/crab-logo.png');
+  height: auto;
+  width: 40px;
+  padding: .5em;
+}
+
+
+.navbar__content {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__content a {
+  display: inline-block;
+  font-size: .725rem;
+  line-height: 44px;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+
+.navbar__content a:hover,
+.navbar__toggle-button:hover,
+.navbar__search-icon:hover {
+  opacity: 0.7;
+}
+
+.navbar__menu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navbar__toggle-button {
+  display: none;
+  grid-gap: 5px;
+  grid-template-columns: auto;
+  padding: 17px 0;
+  height: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar__toggle-button-line {
+  height: 1px;
+  width: 18px;
+  background: white;
+  transition: 0.5s;
+}
+
+.show .navbar__toggle-button-line--1 {
+  transform: rotate(45deg) translateY(5.5px);
+}
+
+.show .navbar__toggle-button-line--2 {
+  transform: rotate(-45deg) translateY(-5.5px);
+}
+
+
+@media (max-width: 768px) {
+  .show {
+    background-color: #000000;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    top: 44px;
+    right: 0;
+    height: 0;
+    width: 100%;
+    background: #333333;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+      background-color 0.3s;
+  }
+
+  .show .navbar__menu {
+    height: 100%;
+    background-color: #000000;
+  }
+
+  .navbar__menu a {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: opacity 1.5s, height 2s;
+  }
+
+  .show .navbar__menu a {
+    opacity: 1;
+    width: auto;
+    height: auto;
+  }
+
+  .navbar__toggle-button {
+    order: 1;
+    display: grid;
+  }
+
+  .navbar__logo {
+    opacity: 0;
+    order: 2;
+  }
+
+  .navbar__search-icon {
+    order: 3;
+  }
+
+
+  /* 
+  .navbar__toggle-button {
+    order: 0;
+    display: grid;
+
+  }
+
+  .navbar__logo {
+    order: 1;
+  }
+
+  .navbar__search-icon {
+    float: right;
+    order: 3;
+  }
+
+  .navbar__logo {
+    opacity: 0;
+  } */
+>>>>>>> 5a912e68b267b0bd56e3680dbc0e52fd23b46c5e
 }
