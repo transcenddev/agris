@@ -40,10 +40,12 @@ nav .desktop-nav {
 }
 
 nav .desktop-nav li a {
+    font-family: "Inter", sans-serif !important;
+    font-size: 0.8rem;
+    font-weight: 200;
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.1ch;
-    font-size: 0.8rem;
     opacity: 0.8;
     transition: opacity 400ms;
 }
@@ -375,6 +377,7 @@ nav .desktop-nav li a:hover {
         overflow: hidden;
         z-index: -1;
         transition: all 1000ms ease;
+
     }
 
     .nav-container.active .desktop-nav {
@@ -384,6 +387,11 @@ nav .desktop-nav li a:hover {
     .nav-container .desktop-nav li {
         width: 100%;
         padding: 0 32px;
+        opacity: 0.8;
+    }
+
+    .nav-container .desktop-nav li:hover {
+        opacity: 1;
     }
 
     .nav-container .desktop-nav li:first-child {
