@@ -1,6 +1,6 @@
 @font-face {
   font-family: "myfont";
-  src: url('/font/wulkan-display-2-0-font/Wulkan-Display-Medium.otf') format('woff');
+  src: url('../font/wulkan-display-2-0-font/Wulkan-Display-Medium.otf') format('woff');
 }
 
 .hero {
@@ -42,7 +42,10 @@
   font-size: .9rem;
   font-weight: 400;
   text-transform: none;
+  vertical-align: middle;
 }
+
+
 
 .hero__cta:hover {
   color: #2997ff;
