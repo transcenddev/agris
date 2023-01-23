@@ -21,7 +21,7 @@
 }
 
 .hero__subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 }
 
 .hero__title {
-  font-family: 'myfont', serif;
+  font-family: 'myfont', serif !important;
   font-size: 4.6rem;
   font-weight: 300;
   max-width: 700px;
