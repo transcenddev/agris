@@ -53,11 +53,21 @@
 /* If the screen is less than 768px, then apply the following styles. */
 @media (max-width: 768px) {
   .hero-subtitle {
-    font-size: .6rem;
+    font-size: .5rem;
+    margin-bottom: 1em;
   }
 
   .hero-title {
     font-size: 1.4rem;
-    max-width: 500px;
+    max-width: 300px;
+
+  }
+
+  .hero-title span {
+    display: none;
+  }
+
+  .hero-cta {
+    letter-spacing: 0ch;
   }
 }
