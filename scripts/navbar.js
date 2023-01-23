@@ -1,9 +1,28 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fb446764d9ae469985840330ad3d42d6a23ddf2a
 const searchButton = document.querySelector("nav .desktop-nav .link-search");
 const closeButton = document.querySelector(".search-container .link-close");
 const desktopNav = document.querySelector(".desktop-nav");
 const searchContainer = document.querySelector(".search-container");
 const overlay = document.querySelector(".overlay");
+<<<<<<< HEAD
 
+=======
+=======
+// const navIcon = document.querySelector(".nav-icon");
+// const nav = document.querySelector("nav");
+
+// navIcon.onclick = function () {
+//     nav.classList.toggle('show');
+// }
+
+const navIcon = document.querySelector(".navbar__toggle-button");
+const nav = document.querySelector(".navbar");
+>>>>>>> 5a912e68b267b0bd56e3680dbc0e52fd23b46c5e
+
+>>>>>>> fb446764d9ae469985840330ad3d42d6a23ddf2a
 searchButton.addEventListener("click", () => {
     desktopNav.classList.add("hide");
     searchContainer.classList.remove("hide");
