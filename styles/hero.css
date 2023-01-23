@@ -6,7 +6,7 @@
   place-items: center;
 
   /* Setting the background image of the hero section. */
-  background-image: url("/dist/assets/images/hero.jpg");
+  background-image: url('/images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
