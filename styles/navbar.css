@@ -80,10 +80,6 @@ body {
   transform: rotate(-45deg) translateY(-5.5px);
 }
 
-svg.search-icon {
-  display: inline-block;
-  float: right;
-}
 
 @media (max-width: 768px) {
   .show {
