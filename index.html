@@ -9,83 +9,150 @@
       content="Mangrove Crab Information System, MCIS, Web Development, Web Design"
     />
     <meta name="author" content="Reymar Mirante" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <title>Mangrove Crab Analytics</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/hero.css" />
-    <link rel="stylesheet" href="./styles/searchbar.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
-    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
 
-    <!-- Custom Script -->
+    <!-- Scripts -->
     <script defer src="./scripts/navbar.js"></script>
-
-    <!-- Font Aweseome CDN Link -->
     <script
       defer
       src="https://kit.fontawesome.com/444873800b.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Google Font CDN lINK -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Font CDN Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-content">
-        <a href="#" class="logo">
-          <img src="./images/crab-logo.svg" alt="Mudcrab Logo" />
-        </a>
-
-        <div class="nav-icon">
-          <div class="bar one"></div>
-          <div class="bar two"></div>
+    <div class="navbar">
+      <div class="nav-container">
+        <nav>
+          <ul class="mobile-nav">
+            <li>
+              <div class="menu-icon-container">
+                <div class="menu-icon">
+                  <span class="line-1"></span>
+                  <span class="line-2"></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="link-logo">
+                <img src="./images/crab-logo.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <ul class="desktop-nav">
+            <li>
+              <a href="#" class="link-logo">
+                <img src="./images/crab-logo.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">Analytics</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Sign in</a>
+            </li>
+            <li>
+              <a href="#">Sign up</a>
+            </li>
+            <li>
+              <a href="#" class="link-search"></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- End of navigation menu items -->
+        <div class="search-container hide">
+          <div class="link-search"></div>
+          <div class="search-bar">
+            <form action="">
+              <input type="text" placeholder="Search" />
+            </form>
+          </div>
+          <div class="link-close"></div>
+          <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>
+                <a href="#">Get Mangrove Crab Data</a>
+              </li>
+              <li>
+                <a href="#">Sampling</a>
+              </li>
+              <li>
+                <a href="#">Overall Analytics</a>
+              </li>
+              <li>
+                <a href="#">Register</a>
+              </li>
+              <li>
+                <a href="#">Log in</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <ul class="nav-list">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Sign up</a></li>
-        </ul>
-
-        <svg
-          class="search-icon"
-          viewBox="0 0 3.7041668 11.641667"
-          height="44"
-          width="14"
-        >
-          <g
-            transform="matrix(0.97865947,0,0,0.97865947,-18.209185,-74.390797)"
-          >
-            <path
-              d="m 19.070369,80.532362 c -0.618144,0.618143 -0.619255,1.62581 -7.32e-4,2.244333 0.570867,0.570865 1.473777,0.613735 2.095614,0.131181 l 0.945308,0.945309 0.280633,-0.280633 -0.945308,-0.945309 c 0.482552,-0.621838 0.439684,-1.524746 -0.131182,-2.095613 -0.618523,-0.618523 -1.62619,-0.617413 -2.244333,7.32e-4 z m 0.280632,0.280632 c 0.466517,-0.466515 1.216631,-0.467898 1.683433,-0.0011 0.466802,0.466801 0.466882,1.218378 3.64e-4,1.684894 -0.466512,0.466513 -1.21809,0.466436 -1.684892,-3.67e-4 -0.466803,-0.466801 -0.465418,-1.216918 0.0011,-1.683432 z"
-              fill="white"
-            />
-          </g>
-        </svg>
+        <div class="mobile-search-container">
+          <div class="link-search"></div>
+          <div class="search-bar">
+            <form action="">
+              <input type="text" placeholder="Search" />
+            </form>
+          </div>
+          <span class="cancel-btn">Cancel</span>
+          <div class="quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>
+                <a href="#">Get Mangrove Crab Data</a>
+              </li>
+              <li>
+                <a href="#">Sampling</a>
+              </li>
+              <li>
+                <a href="#">Overall Analytics</a>
+              </li>
+              <li>
+                <a href="#">Register</a>
+              </li>
+              <li>
+                <a href="#">Log in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav>
-
+      <div class="overlay"></div>
+    </div>
     <!-- Hero section -->
-    <div class="hero-section">
-      <div class="hero-text">
-        <p class="hero-subtitle">Tracking monitoring and preserving</p>
+    <div class="hero">
+      <div class="hero__text">
+        <p class="hero__subtitle">Tracking monitoring and preserving</p>
         <!-- <h1 class="hero-title">Your window to the world of <span>mangrove crabs</span>  with MCIS</h1> -->
-        <h1 class="hero-title">
+        <h1 class="hero__title">
           Exploring the World of Mangrove Crabs
           <span></span>
         </h1>
-        <a class="hero-cta" href="#learn-more">
+        <a class="hero__cta" href="#learn-more">
           <p>Learn more <i class="fa-solid fa-chevron-right"></i></p>
         </a>
       </div>
