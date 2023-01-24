@@ -405,6 +405,7 @@ nav .desktop-nav li a:hover {
     }
 
     .nav-container .desktop-nav li a {
+        font-family: 'Inter', sans-serif !important;
         padding: 16px 0;
         display: inline-block;
         /* border-bottom: 1px solid #616161; */
@@ -588,6 +589,7 @@ nav .desktop-nav li a:hover {
     }
 
     .mobile-search-container .quick-links ul li a {
+        font-family: 'Inter', sans-serif !important;
         padding: 16px 0;
         display: inline-block;
         text-decoration: none;
