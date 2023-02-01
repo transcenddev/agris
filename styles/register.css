@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+/* Defining the colors that will be used in the CSS. */
+:root {
+  --clr-primary: #181818;
+  --clr-secondary: #2997ff;
+  --grey: #ccc;
+  --white: #fff;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Centering the content. */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background: var(--clr-primary);
+  margin: 20px;
+  overflow: hidden;
+}
+
+
+.container {
+  background: #fff;
+  padding: 2em 3em;
+  max-width: 700px;
+  width: 100%;
+  /* layered box shadows */
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+
+.container .title {
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+/* Creating a line below the title. */
+.container .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 27px;
+  border-radius: 5px;
+  background: var(--clr-primary);
+}
+
+input {
+  border: 1px #666 solid;
+}
+
+
+/* ====== First name and Last name details ====== */
+
+
+/* Full name container */
+form .full-name-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0 5px 0;
+}
+
+/* Setting the width of the input box to 50% of the width of the container. */
+form .full-name-details .input-box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 10px;
+}
+
+.full-name-details .fname {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.full-name-details .lname {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.full-name-details input {
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+/* When the input is focus and valid,  Change the border color and transform the scale  */
+form .full-name-details input:focus,
+form .full-name-details input:valid {
+  border-color: var(--clr-secondary);
+}
+
+/* ====== Date of birth ===== */
+
+form .date-of-birth-details {
+  margin-bottom: 10px;
+}
+
+form .date-of-birth-details .dob-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+form .date-of-birth-details .controls {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.date-of-birth-details .controls .input-box {
+  background-color: var(--white);
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid var(--grey);
+  transition: all 0.3s ease;
+}
+
+/* When the input is focus and valid,  Change the border color and transform the scale  */
+.date-of-birth-details .controls .input-box:focus {
+  border-color: var(--clr-secondary);
+
+}
+
+/* ===== Contact Details ===== */
+
+
+form .contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form .contact-details .input-box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 10px;
+}
+
+.contact-details .email-addr,
+.phone-num {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
+.contact-details input {
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #ccc;
+  ;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+/* When the input is focus and valid,  Change the border color and transform the scale  */
+form .contact-details input:focus,
+form .contact-details input:valid {
+  border-color: var(--clr-secondary);
+
+
+}
+
+
+/* ====== Gender details ====== */
+form .gender-details {
+  margin-bottom: 10px;
+}
+
+form .gender-details .gender-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+form .gender-details .category {
+  display: flex;
+  width: 80%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.gender-details .category label {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom Radio Button */
+
+/* Creating a custom radio button. */
+.gender-details .category label .dot {
+  height: 18px;
+  width: 18px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* When the radio button is checked,  Change the background color */
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+  background: var(--clr-secondary);
+  border-color: var(--grey);
+
+}
+
+/* Hide the default radio button */
+.gender-details input[type='radio'] {
+  display: none;
+}
+
+/* ===== Hone Address Details ===== */
+
+form .home-addr-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 10px;
+}
+
+/* Setting the width of the input box to 50% of the width of the container. */
+form .home-addr-details .input-box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 10px;
+}
+
+.home-addr-details .province,
+.city,
+.municipality,
+.country {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.home-addr-details input {
+  font-size: 15px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+/* when it focus and valid, change the border color and transform the scale */
+form .home-addr-details input:focus,
+form .home-addr-details input:valid {
+  border-color: var(--clr-secondary);
+}
+
+
+
+/* ====== Submit Button ====== */
+
+form .register-btn input {
+  width: 100%;
+  height: 35px;
+  margin: 20px 0 5px 0;
+  border: none;
+  background: var(--clr-secondary);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+/* When the mouse is hovering over the button, Change the opacity of the button */
+.register-btn input:hover {
+  opacity: 0.9;
+}
+
+/* When the button is clicked, Change the opacity */
+.register-btn input:active {
+  opacity: 0.7;
+}
+
+
+/* ===== login details ====== */
+
+form .login-details {
+  text-align: center;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn {
+  text-decoration: none;
+  color: var(--clr-secondary);
+}
+
+
+/* When the mouse is hovering over the button, Changes the text decoration.*/
+.sign-in-btn:hover {
+  text-decoration: underline;
+}
+
+/* When the button is clicked, Changing the color of the text. */
+.sign-in-btn:active {
+  color: var(--clr-secondary);
+}
+
+
+/* The above code is a media query that is used to make the form responsive. */
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  form .full-name-details .input-box {
+    width: 95%;
+  }
+
+  form .date-of-birth-details .controls {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .date-of-birth-details .controls .input-box {
+    width: 110px;
+  }
+
+  form .contact-details .input-box {
+    width: 95%;
+  }
+
+  form .gender-details .category {
+    width: 95%;
+  }
+
+  form .home-addr-details .input-box {
+    width: 95%;
+  }
+
+
+  /* ====== Scroll Bar ====== */
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--clr-secondary);
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:focus {
+    background: var(--clr-secondary);
+  }
+
+  /* Create a scroll bar. */
+  .scroll {
+    display: block;
+    border: 0px solid red;
+    padding: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    transition: all 0.5s;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1em;
+  }
+}
