@@ -54,15 +54,6 @@ nav .desktop-nav li a:hover {
     opacity: 1;
 }
 
-/* .link-logo {
-    background: url('images/apple-logo.svg');
-    display: block;
-    background-position: center;
-    height: 44px;
-    width: 15px;
-    background-repeat: no-repeat;
-} */
-
 .link-logo img {
     height: auto;
     width: 40px;
