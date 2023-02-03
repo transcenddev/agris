@@ -212,7 +212,7 @@ aside .sidebar a:last-child {
 
 aside .sidebar a.active {
   background: var(--color-light);
-  color: var(--color-primary);  
+  color: var(--color-primary);
   margin-left: 0;
 }
 
@@ -524,6 +524,10 @@ main .analytics h2 {
     display: none;
   }
 
+  aside .logo img {
+    margin-left: 2em;
+  }
+
   aside .sidebar a {
     width: 5.6rem;
   }
@@ -549,10 +553,43 @@ main .analytics h2 {
 
 }
 
+@media (min-width: 769px) and (max-width: 1199px) {
+  .container {
+    width: 94%;
+    grid-template-columns: 7rem auto 23rem;
+  }
+
+  aside .logo h2,
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+
+  main .insights {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  main .analytics {
+    width: 94%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0 0 8.8rem;
+  }
+}
 
 /* Apply styles to the page when the page is viewed on a device with a
 screen width of 768px or less. */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
     grid-template-columns: 1fr;
@@ -580,6 +617,7 @@ screen width of 768px or less. */
 
   aside .logo {
     margin-left: 1rem;
+
   }
 
   aside .logo h2,
