@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "myfont";
+  src: url('../font/wulkan-display-2-0-font/Wulkan-Display-Medium.otf') format('woff');
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 100px 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero__text {
+  color: #fff;
+  text-align: center;
+  padding: 3em;
+}
+
+.hero__subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1ch;
+  margin-bottom: .5em;
+}
+
+.hero__title {
+  font-family: 'myfont', serif !important;
+  font-size: 4.6rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 0.1em;
+}
+
+.hero__cta {
+  font-size: .9rem;
+  font-weight: 400;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+
+
+.hero__cta:hover {
+  color: #2997ff;
+  transition: all .75s;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .hero__subtitle {
+    font-size: .5rem;
+    margin-bottom: 1em;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+    max-width: 400px;
+  }
+
+  .hero__title span {
+    display: none;
+  }
+
+  .hero__cta {
+    letter-spacing: 0ch;
+    font-size: .7rem;
+  }
+}
+
+
+/* =============  why mcis section ================= */
+
+.why-mcis {
+  height: 10vh;
+}
+
+
+section.why-mcis .content {
+  display: flex;
+  align-items: space-between;
+  /* display: grid;
+  grid-template-columns: 1fr 500px 1fr; */
+  gap: 3em;
+  min-height: 80vh;
+}
+
+.why-mcis .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex: 1;
+}
+
+.why-mcis .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+
+}
+
+.why-mcis .center {
+  position: relative;
+  flex: 2;
+  min-height: 700px;
+}
+
+.why-mcis .center .img-one,
+.why-mcis .center .img-two {
+  position: absolute;
+}
+
+.why-mcis .center .img-one {
+  width: 100%;
+  max-width: 300px;
+  left: 40px;
+  transform: rotate(-3deg);
+
+}
+
+.why-mcis .center .img-two {
+  width: 100%;
+  max-width: 250px;
+  transform: rotate(2deg);
+  z-index: 1;
+  right: 40px;
+  bottom: 10px;
+}
+
+
+.section__text {
+  text-align: center;
+}
+
+.section__title {
+  font-family: 'myfont', sans-serif;
+  font-size: 4.5rem;
+  margin-bottom: .5em;
+}
+
+.section__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+  section.why-mcis .content {
+    display: flex;
+    align-items: space-between;
+    /* display: grid;
+    grid-template-columns: 1fr 500px 1fr; */
+    gap: 2em;
+    min-height: 80vh;
+    flex-direction: column;
+  }
+
+  .why-mcis .center {
+    order: 1;
+  }
+
+  .why-mcis .left {
+    order: 3;
+    width: 100%;
+
+  }
+
+  .why-mcis .right {
+    order: 2;
+    width: 100%;
+    max-width: 1200px;
+    gap: 1em;
+  }
+
+  .why-mcis .center {
+    margin-bottom: 4em;
+  }
+
+  .why-mcis .center .img-one {
+    width: 100%;
+    max-width: 400px;
+    left: 160px;
+    transform: rotate(-3deg);
+
+  }
+
+  .why-mcis .center .img-two {
+    width: 100%;
+    max-width: 300px;
+    transform: rotate(2deg);
+    z-index: 1;
+    right: 120px;
+    bottom: -60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .why-mcis .center .img-one {
+    width: 100%;
+    max-width: 300px;
+    left: 100px;
+    transform: rotate(-3deg);
+
+  }
+
+  .why-mcis .center .img-two {
+    width: 100%;
+    max-width: 250px;
+    transform: rotate(2deg);
+    z-index: 1;
+    right: 120px;
+    bottom: 60px;
+  }
+
+  .why-mcis .center {
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .why-mcis .center .img-one {
+    width: 100%;
+    max-width: 300px;
+    left: 10px;
+    transform: rotate(-3deg);
+
+  }
+
+  .why-mcis .center .img-two {
+    width: 100%;
+    max-width: 250px;
+    transform: rotate(2deg);
+    z-index: 1;
+    right: 0px;
+    bottom: 60px;
+  }
+
+  .why-mcis .center {
+    margin-bottom: 0em;
+  }
+}
