@@ -86,9 +86,7 @@
 
 /* =============  why mcis section ================= */
 
-.why-mcis {
-  height: 10vh;
-}
+.why-mcis {}
 
 
 section.why-mcis .content {
@@ -151,6 +149,7 @@ section.why-mcis .content {
 
 .section__title {
   font-family: 'myfont', sans-serif;
+  font-weight: 400;
   font-size: 4.5rem;
   margin-bottom: .5em;
 }
@@ -257,4 +256,58 @@ section.why-mcis .content {
   .why-mcis .center {
     margin-bottom: 0em;
   }
+}
+
+/* =============  ============ */
+
+.about-crabs {}
+
+
+.about-crabs.background {
+  background-image: url('../images/about-crabs-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.about-crabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.about-crabs__text {
+  color: #fff;
+  padding: 0 3em;
+  text-align: center;
+}
+
+.about-crabs__title {
+  font-family: 'myfont', sans-serif;
+  font-weight: 400;
+  font-size: 4.75rem;
+  margin-bottom: 0.5em;
+}
+
+.about-crabs__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.about-crabs__cta {
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 0.5rem 2rem;
+  transition: all 500ms ease;
+}
+
+.about-crabs__cta:hover {
+  background-color: #fff;
+  color: black;
 }
