@@ -1,0 +1,65 @@
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  padding: 4em 0;
+  display: grid;
+  grid-gap: 5em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
+}
+
+.from-left {
+  grid-column: 2 / 3;
+}
+
+.from-right {
+  grid-column: 3 / 4;
+}
+
+.crabs__intro {
+  padding: 2em;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.crabs__intro h1 {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .from-left,
+  .from-right {
+    grid-column: 1 / 2;
+  }
+
+  .grid img {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .grid p {
+    grid-row: 2;
+  }
+}
+
+.crabs__intro {
+  padding: 2em;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.crabs__intro h1 {
+  margin-bottom: 1em;
+}
