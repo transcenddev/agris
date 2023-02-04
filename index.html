@@ -13,6 +13,7 @@
     <title>McrabIS</title>
 
     <!-- CSS -->
+
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
     <link rel="stylesheet" href="./styles/homepage.css" />
@@ -31,142 +32,87 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
   <body>
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="nav-container">
-        <nav>
-          <ul class="mobile-nav">
-            <li>
-              <div class="menu-icon-container">
-                <div class="menu-icon">
-                  <span class="line-1"></span>
-                  <span class="line-2"></span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="link-logo">
-                <img src="./images/crab-logo.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-          <ul class="desktop-nav">
-            <li>
-              <a href="#" class="link-logo">
-                <img src="./images/crab-logo.svg" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="dashboard.html">Dashboard</a>
-            </li>
-            <li>
-              <a href="#">Analytics</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="login.html">Sign in</a>
-            </li>
-            <li>
-              <a href="#">Sign up</a>
-            </li>
-            <li>
-              <a href="#" class="link-search"></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- End of navigation menu items -->
-        <div class="search-container hide">
-          <div class="link-search"></div>
-          <div class="search-bar">
-            <form action="">
-              <input type="text" placeholder="Search" />
-            </form>
-          </div>
-          <div class="link-close"></div>
-          <div class="quick-links">
-            <h2>Quick Links</h2>
-            <ul>
-              <li>
-                <a href="#">Get Mangrove Crab Data</a>
-              </li>
-              <li>
-                <a href="#">Sampling</a>
-              </li>
-              <li>
-                <a href="#">Overall Analytics</a>
-              </li>
-              <li>
-                <a href="#">Register</a>
-              </li>
-              <li>
-                <a href="login.html">Log in</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="mobile-search-container">
-          <div class="link-search"></div>
-          <div class="search-bar">
-            <form action="">
-              <input type="text" placeholder="Search" />
-            </form>
-          </div>
-          <span class="cancel-btn">Cancel</span>
-          <div class="quick-links">
-            <h2>Quick Links</h2>
-            <ul>
-              <li>
-                <a href="#">Get Mangrove Crab Data</a>
-              </li>
-              <li>
-                <a href="#">Sampling</a>
-              </li>
-              <li>
-                <a href="#">Overall Analytics</a>
-              </li>
-              <li>
-                <a href="#">Register</a>
-              </li>
-              <li>
-                <a href="login.html">Log in</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </div>
+    <header class="primary-header">
+      <a href="#" class="navbar-brand flex" aria-label="homepage">
+        <img id="logo" src="./images/crab-logo-white.png" alt="crab logo">
+        <p>McrabIS</p>
+      </a>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <!-- <span class="sr-only">Menu</span --><i
+          class="fa-solid fa-crab"
+        ></i>
+        <span class="material-icons-sharp"> menu </span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="nav__list primary-navigation"
+        >
+          <li class="nav__list-item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="dashboard.html" class="nav__link">Dashboard</a>
+          </li>
+          <li class="nav__list-item">
+            <a href="#" class="nav__link">Analytics</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--btn" href="#">Login</a>
+          </li>
+          <li class="nav__list-item">
+            <a
+              class="nav__link nav__link--btn nav__link--btn--highlight"
+              href="#"
+              >Register</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main id="content" class="content">
       <article class="page-home">
-        <!-- =============== Hero section =================== -->
-        <section class="hero">
-          <div class="hero__text">
-            <p class="hero__subtitle">Tracking monitoring and preserving</p>
-            <h1 class="hero__title">
+        <!-- =============== section one =================== -->
+        <section class="section section-one hero">
+          <div class="section__title hero__text container">
+            <p class="section__subtitle hero__subtitle">Tracking monitoring and preserving</p>
+            <h1 class="section__title hero__title">
               Exploring the World of Mangrove Crabs
               <span></span>
             </h1>
-            <a class="hero__cta" href="#learn-more">
-              <p>Learn more <i class="fa-solid fa-chevron-right"></i></p>
+            <a class="hero__cta" href="#">
+              Learn more <i class="fa-solid fa-chevron-right"></i>
             </a>
           </div>
         </section>
-        <!-- ===============  Why MCIS ============================= -->
-        <section class="why-mcis">
+        <!-- ===============  section two   ============================= -->
+        <section class="section section-two flex" id="section-two">
           <div class="container">
             <div class="section__text">
               <p class="section__subtitle">What make us different</p>
-              <h2 class="section__title">Why MCIS</h2>
+              <h2 class="section__title">Why McrabIS ?</h2>
             </div>
-            <div class="content">
-              <div class="left">
+            <div class="content flex">
+              <div class="left flex">
                 <div>
                   <h3>Lorem Ipsum</h3>
                   <p>
@@ -184,16 +130,10 @@
                   </p>
                 </div>
               </div>
-
               <div class="center">
-                <img class="img-one" src="./images/mangrove-1.jpg" alt="" />
-                <img
-                  class="img-two"
-                  src="./images/mangrove-crab-2.jpg"
-                  alt=""
-                />
+                <img src="./images/second-section-mangrove-crab.png" alt="" />
               </div>
-              <div class="right">
+              <div class="right flex">
                 <p>
                   McrabIS is an information system designed to facilitate
                   communication and interaction between various stakeholders
@@ -212,21 +152,23 @@
             </div>
           </div>
         </section>
-        <section class="about-crabs background">
-          <div class="about-crabs__text">
-            <p class="about-crabs__subtitle">I want to know</p>
-            <h2 class="about-crabs__title">Mangrove Crabs</h2>
-          </div>
-          <a class="about-crabs__cta" href="#">
-            <p>Learn more</p>
-          </a>
+        <!-- ===============  section three ============================= -->
+        <section class="section section-three about-crabs">
+          <div class="container">
+            <div class="section__text">
+              <p class="section__subtitle">I want to know</p>
+              <h2 class="section__title">Mangrove Crabs</h2>
+            </div>
+            <a class="section__cta" href="#">
+              <p>Learn more</p>
+            </a>
+          </div>  
+          
         </section>
-      </article>
-
-      <!-- =============== End of Hero Section ============ -->
-      <article></article>
     </main>
+      <!-- Footer -->
+    <footer>
 
-    <!-- FOOTER -->
+    </footer>
   </body>
 </html>
