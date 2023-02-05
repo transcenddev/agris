@@ -58,56 +58,7 @@ sectionOneOptions);
 sectionOneObserver.observe(sectionOne);
 
 
-//change logo on scroll
-
-// Get the logo element
-// var logo = document.getElementById("logo");
-
-// // Get the position of the logo
-// var logoPosition = logo.getBoundingClientRect().top;
-
-// // Listen for the scroll event
-// window.addEventListener("scroll", function() {
-//   // Get the current scroll position
-//   var scrollPosition = window.pageYOffset;
-
-//   // Check if the scroll position is greater than the logo position
-//   if (scrollPosition > logoPosition) {
-//     // Change the logo
-//     logo.src = "./images/crab-logo-black.png";
-//   } else {
-//     // Change back to the original logo
-//     logo.src = "./images/crab-logo-white.png";
-//   }
-// });
-
-
-// var logo = document.getElementById("logo");
-
-// // Get the section element
-// var section = document.getElementById("section-two");
-
-// // Get the position of the section
-// var sectionPosition = section.getBoundingClientRect().top;
-
-// // Listen for the scroll event
-// window.addEventListener("scroll", function() {
-//   // Get the current scroll position
-//   var scrollPosition = window.pageYOffset;
-
-//   // Check if the scroll position is within the section
-//   if (scrollPosition > sectionPosition && scrollPosition < (sectionPosition + section.offsetHeight)) {
-//     // Change the logo
-//     logo.src = "./images/crab-logo-black.png";
-//     logo.style.transition = "all 300ms ease-in";
-//   } else {
-//     // Change back to the original logo
-//     logo.src = "./images/crab-logo-white.png";
-//     logo.style.transition = "all 300ms ease-in";
-//   }
-// });
-
-
+//Change logo on scroll 
 // Get the logo element
 var logo = document.getElementById("logo");
 
